@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProfileApp</string>
+    <string name="loading_profiles">Loading profiles...</string>
 </resources>
