@@ -13,9 +13,9 @@ public class ProfileDataHelper extends SQLiteOpenHelper {
 
     private static final String PROFILE_TABLE_NAME = "profile";
     private static final String ID_COLUMN_NAME = "_id";
-    private static final String NAME_COLUMN_NAME = "name";
-    private static final String AGE_COLUMN_NAME = "age";
-    private static final String GENDER_COLUMN_NAME = "gender";
+    public static final String NAME_COLUMN_NAME = "name";
+    public static final String AGE_COLUMN_NAME = "age";
+    public static final String GENDER_COLUMN_NAME = "gender";
     private static final String PHOTO_COLUMN_NAME = "photo";
 
 
