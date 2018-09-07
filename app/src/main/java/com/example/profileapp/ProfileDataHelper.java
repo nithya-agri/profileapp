@@ -12,7 +12,7 @@ public class ProfileDataHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     private static final String PROFILE_TABLE_NAME = "profile";
-    private static final String ID_COLUMN_NAME = "_id";
+    public static final String ID_COLUMN_NAME = "_id";
     public static final String NAME_COLUMN_NAME = "name";
     public static final String AGE_COLUMN_NAME = "age";
     public static final String GENDER_COLUMN_NAME = "gender";
@@ -66,5 +66,17 @@ public class ProfileDataHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
         String query = "SELECT * FROM " + PROFILE_TABLE_NAME + " WHERE " + ID_COLUMN_NAME + "=" + id + ";";
         return db.rawQuery(query, null);
+    }
+
+    public String getVerboseGender(int i) {
+        if (i == 1) {
+            return "Male";
+        } else if (i == 2) {
+            return "Female";
+        } else if (i == 3){
+            return "Other";
+        } else {
+            return "N/A";
+        }
     }
 }

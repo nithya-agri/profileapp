@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProfileApp</string>
     <string name="loading_profiles">Loading profiles...</string>
+    <string name="name">name: </string>
+    <string name="age">age: </string>
+    <string name="gender">gender</string>
 </resources>
