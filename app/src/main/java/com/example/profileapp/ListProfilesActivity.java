@@ -32,15 +32,11 @@ public class ListProfilesActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.profiles_list_view);
 
         String[] columns = {
-                NAME_COLUMN_NAME,
-                AGE_COLUMN_NAME,
-                GENDER_COLUMN_NAME
+                NAME_COLUMN_NAME
         };
 
         int[] resourceIds = {
-                R.id.name,
-                R.id.age,
-                R.id.gender
+                R.id.name
         };
 
         ListAdapter adapter = new SimpleCursorAdapter(this, R.layout.profile_row, cursor, columns, resourceIds, 0);

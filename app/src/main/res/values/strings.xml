@@ -3,5 +3,5 @@
     <string name="loading_profiles">Loading profiles...</string>
     <string name="name">name: </string>
     <string name="age">age: </string>
-    <string name="gender">gender</string>
+    <string name="gender">gender: </string>
 </resources>
