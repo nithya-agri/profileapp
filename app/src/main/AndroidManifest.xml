@@ -16,10 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListProfilesActivity"
-            android:parentActivityName=".SplashActivity"/>
-        <activity android:name=".DetailProfileActivity"
-            android:parentActivityName=".ListProfilesActivity"/>
+        <activity
+            android:name=".ListProfilesActivity"
+            android:parentActivityName=".SplashActivity" />
+        <activity
+            android:name=".DetailProfileActivity"
+            android:parentActivityName=".ListProfilesActivity" />
+        <activity android:name=".AddProfileActivity"
+            android:parentActivityName=".ListProfilesActivity"></activity>
     </application>
 
 </manifest>

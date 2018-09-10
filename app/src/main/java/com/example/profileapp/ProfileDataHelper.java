@@ -19,9 +19,9 @@ public class ProfileDataHelper extends SQLiteOpenHelper {
     private static final String PHOTO_COLUMN_NAME = "photo";
 
 
-    private static final int MALE_GENDER = 1;
-    private static final int FEMALE_GENDER = 2;
-    private static final int OTHER_GENDER = 3;
+    public static final int MALE_GENDER = 1;
+    public static final int FEMALE_GENDER = 2;
+    public static final int OTHER_GENDER = 3;
 
     public ProfileDataHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -73,10 +73,21 @@ public class ProfileDataHelper extends SQLiteOpenHelper {
             return "Male";
         } else if (i == 2) {
             return "Female";
-        } else if (i == 3){
+        } else if (i == 3) {
             return "Other";
         } else {
             return "N/A";
         }
+    }
+
+    public boolean insertProfile(String name, int age, int gender) {
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(NAME_COLUMN_NAME, name);
+        contentValues.put(AGE_COLUMN_NAME, age);
+        contentValues.put(GENDER_COLUMN_NAME, gender);
+
+        long l = db.insert(PROFILE_TABLE_NAME, null, contentValues);
+        return l > -1;
     }
 }

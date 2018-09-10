@@ -4,4 +4,8 @@
     <string name="name">name: </string>
     <string name="age">age: </string>
     <string name="gender">gender: </string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="other">other</string>
+    <string name="submit">submit</string>
 </resources>

@@ -55,4 +55,9 @@ public class ListProfilesActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
+
+    public void addProfile(View view) {
+        Intent intent = new Intent(getBaseContext(), AddProfileActivity.class);
+        startActivity(intent);
+    }
 }

@@ -17,6 +17,7 @@
         android:layout_weight="5"
         android:layout_height="wrap_content"
         android:id="@+id/name"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
